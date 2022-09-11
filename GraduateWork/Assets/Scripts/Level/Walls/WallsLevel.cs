@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class WallsLevel : IGenerationLevel
+public class WallsLevel : IGenerations
 {
-    public void Generated(Vector3 scale, Vector3 positions, Quaternion rotations,
-		string tag, int layer, Sprite sprites)
+    public void Generated(Vector3 scale, Vector3 positions, 
+		Quaternion rotations, string tag, int layer, Sprite sprites)
     {
 		var gameObject = new GameObject();
 		var spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
@@ -14,6 +14,7 @@ public class WallsLevel : IGenerationLevel
 		gameObject.tag = tag;
 		gameObject.layer = layer;
 		gameObject.transform.position = positions;
+		gameObject.GetComponent<SpriteRenderer>().material = (Material)Resources.Load("Material/GlobalLight");
 
 		gameObject.AddComponent<BoxCollider2D>();
 	}

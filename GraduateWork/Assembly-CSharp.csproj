@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,10 +53,19 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\Level\Walls\WallsLevel.cs" />
+    <Compile Include="Assets\Scripts\Characters\GeneratedCharacters.cs" />
+    <Compile Include="Assets\Scripts\Characters\Player\ControlPlayer.cs" />
+    <Compile Include="Assets\Scripts\Level\LevelGenerationTwo.cs" />
+    <Compile Include="Assets\Scripts\Characters\Player\PlayerGenerated.cs" />
+    <Compile Include="Assets\Scripts\Characters\Player\CameraPlayer(TestCamera).cs" />
+    <Compile Include="Assets\Scripts\IGenerations.cs" />
+    <Compile Include="Assets\Scripts\Level\LevelGenerationThree.cs" />
     <Compile Include="Assets\Scripts\Level\LevelGenerationOne.cs" />
     <Compile Include="Assets\Scripts\Level\Plane\PlaneLevel.cs" />
-    <Compile Include="Assets\Scripts\Level\Walls\WallsLevel.cs" />
-    <Compile Include="Assets\Scripts\Level\IGenerationLevel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

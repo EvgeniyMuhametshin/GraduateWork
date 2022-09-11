@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class PlaneLevel : IGenerationLevel
+public class PlaneLevel : IGenerations
 {
-    public void Generated(Vector3 scale, Vector3 positions, Quaternion rotations, 
-		string tag, int layer, Sprite sprites)
+    public void Generated(Vector3 scale, Vector3 positions, 
+		Quaternion rotations, string tag, int layer, Sprite sprites)
     {
 		var gameObject = new GameObject();
 		var spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
@@ -15,6 +15,7 @@ public class PlaneLevel : IGenerationLevel
 		gameObject.layer = layer;
 		gameObject.transform.position = positions;
 		gameObject.GetComponent<SpriteRenderer>().sortingOrder = -1;
+		gameObject.GetComponent<SpriteRenderer>().material = (Material)Resources.Load("Material/GlobalLight");
 
 		gameObject.AddComponent<MeshCollider>();
 	}

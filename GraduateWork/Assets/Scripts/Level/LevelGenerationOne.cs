@@ -5,10 +5,9 @@ public class LevelGenerationOne : MonoBehaviour
     [SerializeField]
     private Sprite[] _sprites;
 
-    private IGenerationLevel _planeLevel;
-    private IGenerationLevel _wallsLevel;
+    private IGenerations _planeLevel;
+    private IGenerations _wallsLevel;
 
-	//var sprite = Resources.Load<Sprite>("Sprites/Characters/Level/Floor and Walls_0");
     void Start()
     {
 		#region PlaneLevel

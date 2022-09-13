@@ -8,7 +8,7 @@ public class PlayerGenerated : MonoBehaviour
     [SerializeField] 
     private Camera _camera;
 
-    private const float _speedPlayer = 5f;
+    private float _speedPlayer = 5f;
 
     [SerializeField]
     private KeyCode _buttonNameForvard = KeyCode.W;
@@ -19,13 +19,13 @@ public class PlayerGenerated : MonoBehaviour
 	[SerializeField]
 	private KeyCode _buttonNameRight = KeyCode.D;
 
-	private GeneratedCharacters _generationsCharacter;
+	private GeneratedCharactersPlayer _generationsCharacter;
     private ControlPlayer _controlPlayer;
     private GameObject _returnGameObject;
 
 	void Start()
     {
-        _generationsCharacter = new GeneratedCharacters();
+        _generationsCharacter = new GeneratedCharactersPlayer();
 
         _returnGameObject = _generationsCharacter.Generated(new Vector3(1,1,1), new Vector3(0,0,0),
             Quaternion.Euler(0,0,0), "Player", 6, _sprite);
@@ -37,7 +37,17 @@ public class PlayerGenerated : MonoBehaviour
     {
         _controlPlayer.Control(_returnGameObject, _speedPlayer, _buttonNameForvard, _buttonNameBack,
 			_buttonNameLeft, _buttonNameRight);
-
-        _camera.transform.position = _returnGameObject.transform.position + new Vector3(0,0,-5);
+		//TODO Перенести бег в класс контроллер
+		//Бег персонажа ----------------------------------------
+		if (Input.GetKeyDown(KeyCode.LeftShift))
+		{
+			_speedPlayer = _speedPlayer * 2;
+		}
+		else if (Input.GetKeyUp(KeyCode.LeftShift))
+		{
+			_speedPlayer = 5;
+		}
+		//------------------------------------------------------
+		_camera.transform.position = _returnGameObject.transform.position + new Vector3(0,0,-5);
 	}
 }

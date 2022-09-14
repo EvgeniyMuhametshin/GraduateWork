@@ -63,11 +63,12 @@
     <Compile Include="Assets\Scripts\Level\Walls\WallsLevel.cs" />
     <Compile Include="Assets\Scripts\Characters\GeneratedCharactersPlayer.cs" />
     <Compile Include="Assets\Scripts\Characters\Enemy\ControllerEnemy.cs" />
+    <Compile Include="Assets\Scripts\Loanding\MenuPause.cs" />
     <Compile Include="Assets\Scripts\Loanding\LoandingNextScene.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectsGeneratedStairLevelThree.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\Scripts\Loanding\Buttons.cs" />
+    <Compile Include="Assets\Scripts\Loanding\ButtonsMainMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\Scripts\Characters\Player\ControlPlayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
@@ -106,8 +107,11 @@
     <Compile Include="Assets\Scripts\Level\Plane\PlaneLevel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Scripts\Characters\Player\SettingsPlayer.cs" />
-    <Compile Include="Assets\Scripts\Menu\MenuPause.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\SavePositions.cs" />
+    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectGeneratedTwo.cs" />
+    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectGeneratedStairsLevelOne.cs" />
+    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectGeneratedThree.cs" />
+    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectsGeneratedStairLevelFour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

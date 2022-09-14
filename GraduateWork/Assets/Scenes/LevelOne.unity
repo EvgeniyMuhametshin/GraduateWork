@@ -552,6 +552,7 @@ MonoBehaviour:
   _buttonNameBack: 115
   _buttonNameLeft: 97
   _buttonNameRight: 100
+  _positions: {fileID: 11400000, guid: 1fd63ace6b8b01849a2efc453ac634da, type: 2}
 --- !u!114 &1796350143
 MonoBehaviour:
   m_ObjectHideFlags: 0

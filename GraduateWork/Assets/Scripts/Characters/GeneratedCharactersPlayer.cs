@@ -26,12 +26,7 @@ public class GeneratedCharactersPlayer
 
 		gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2,1);
 
-		//Фонарик 
-		var gameObjectLight = new GameObject();
-		gameObjectLight.transform.parent = gameObject.transform;
-		gameObjectLight.AddComponent<Light>();
-		gameObjectLight.transform.position = new Vector3(0,0,-1);
-		gameObjectLight.AddComponent<LightController>();
+		gameObject.AddComponent<Light>();
 
 		return gameObject;
 	}

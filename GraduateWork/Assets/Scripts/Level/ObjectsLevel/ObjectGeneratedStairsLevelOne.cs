@@ -1,7 +1,7 @@
 using UnityEngine;
 
-//переход с первого на второй уровень (ПОДВАЛ)
-public class ObjectsGeneratedStairLevelTwo : IGenerations
+//переход со второго на первый уровень (ПЕРВЫЙ ЭТАЖ)
+public class ObjectGeneratedStairsLevelOne : IGenerations
 {
 	public void Generated(Vector3 scale, Vector3 positions,
 		Quaternion rotations, string tag, int layer, Sprite sprites)
@@ -21,12 +21,12 @@ public class ObjectsGeneratedStairLevelTwo : IGenerations
 		gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
 		gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1, 1);
 		gameObject.AddComponent<LoandingNextScene>();
-		gameObject.GetComponent<LoandingNextScene>().NumberScene = 2;
+		gameObject.GetComponent<LoandingNextScene>().NumberScene = 1;
 
 		//------------------------------------------------------------------
 		gameObject.GetComponent<LoandingNextScene>()._playerPositions =
 			(SavePositions)Resources.Load("ScriptableObjects/PlayerPositions");
-		gameObject.GetComponent<LoandingNextScene>()._position = new Vector3(10,10,-1);
+		gameObject.GetComponent<LoandingNextScene>()._position = new Vector3(-31, -21, -1);
 		//------------------------------------------------------------------
 	}
 }

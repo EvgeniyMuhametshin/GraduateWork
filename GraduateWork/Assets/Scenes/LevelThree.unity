@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 792439785}
   - component: {fileID: 792439786}
   - component: {fileID: 792439787}
+  - component: {fileID: 792439788}
   m_Layer: 0
   m_Name: Example
   m_TagString: Untagged
@@ -272,6 +273,21 @@ MonoBehaviour:
   _buttonNameBack: 115
   _buttonNameLeft: 97
   _buttonNameRight: 100
+  _positions: {fileID: 11400000, guid: 1fd63ace6b8b01849a2efc453ac634da, type: 2}
+--- !u!114 &792439788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792439784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d9f3cf31bb01474f94bb28b5428c32d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 21300000, guid: b7eed878a76dbd14e9eecf35991ffa9e, type: 3}
 --- !u!1 &854667978
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,11 +53,17 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\ScriptableObjects\Inventory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\Characters\Enemy\EnemyGenerated.cs" />
+    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectGeneratedTwo.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\Scripts\Level\Door\GeneratedDoor.cs" />
     <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectGeneratedOne.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Scripts\Level\Walls\WallsLevel.cs" />
@@ -67,7 +73,9 @@
     <Compile Include="Assets\Scripts\Loanding\LoandingNextScene.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectsGeneratedStairLevelThree.cs" />
+    <Compile Include="Assets\Scripts\UI\UIPlayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\Level\Key\Logic\KeyActions.cs" />
     <Compile Include="Assets\Scripts\Loanding\ButtonsMainMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\Scripts\Characters\Player\ControlPlayer.cs" />
@@ -75,8 +83,13 @@
     <Compile Include="Assets\Scripts\Level\LevelGenerationTwo.cs" />
     <Compile Include="Assets\Scripts\Characters\GeneratedCharacterEnemy.cs" />
     <Compile Include="Assets\Scripts\Characters\Player\LightController.cs" />
+    <Compile Include="Assets\Scripts\Level\Key\ObjectKey.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\SavePositions.cs" />
+    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectGeneratedThree.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectsGeneratedStairLevelFour.cs" />
+    <Compile Include="Assets\Scripts\Level\Door\Logic\DoorActions.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Characters\Player\PlayerGenerated.cs" />
@@ -84,6 +97,7 @@
     <Compile Include="Assets\Scripts\IGenerations.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\Scripts\Level\Door\DoorObjects.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\Level\IGenerationLevel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -92,6 +106,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectGeneratedStairsLevelOne.cs" />
     <Compile Include="Assets\Scripts\Level\LevelGenerationOne.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
@@ -106,12 +121,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\Level\Plane\PlaneLevel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\Scripts\Loanding\FinaliScene.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Scripts\ScriptableObjects\SavePositions.cs" />
-    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectGeneratedTwo.cs" />
-    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectGeneratedStairsLevelOne.cs" />
-    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectGeneratedThree.cs" />
-    <Compile Include="Assets\Scripts\Level\ObjectsLevel\ObjectsGeneratedStairLevelFour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

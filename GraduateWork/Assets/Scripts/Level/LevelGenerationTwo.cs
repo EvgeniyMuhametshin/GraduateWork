@@ -7,9 +7,16 @@ public class LevelGenerationTwo : MonoBehaviour
 
 	private IGenerations _planeLevel;
 	private IGenerations _wallsLevel;
+	private ObjectKey _key;
 
 	void Start()
     {
+		#region Key
+		_key = new ObjectKey();
+		_key.Generated(new Vector3(2, 2, 2), new Vector3(-70, 32, 0),
+			Quaternion.Euler(0, 0, 0), "LevelTwo", 8, _sprites[8]);
+		#endregion
+
 		#region PlaneLevel
 		_planeLevel = new PlaneLevel();
 		_planeLevel.Generated(new Vector3(5, 6, 2), new Vector3(0, 0, 0),

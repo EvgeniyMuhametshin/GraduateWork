@@ -34,8 +34,6 @@ public class PlayerGenerated : MonoBehaviour
 
         _controlPlayer = new ControlPlayer();
 		_returnGameObject.GetComponent<Light>().intensity = 0;
-
-		//transform.position = _positions.positions; //Deleted???
     }
 
     void Update()

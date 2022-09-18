@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 1531864403557806268, guid: 7525f3e2ab9c6df49b9fb8ef91566428, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1531864403557806271, guid: 7525f3e2ab9c6df49b9fb8ef91566428, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -568,7 +572,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &580118449
 RectTransform:

@@ -4,9 +4,11 @@ public class PlayerGenerated : MonoBehaviour
 {
     [SerializeField]
     private Sprite _sprite;
-
-    [SerializeField] 
-    private Camera _camera;
+	
+	[SerializeField]
+	private float movingSpeed;
+	[SerializeField]
+	private Transform playerTransform;
 
     private float _speedPlayer = 5f;
 
@@ -25,6 +27,7 @@ public class PlayerGenerated : MonoBehaviour
 
 	public SavePositions _positions;
 
+
 	void Start()
     {
         _generationsCharacter = new GeneratedCharactersPlayer();
@@ -34,15 +37,36 @@ public class PlayerGenerated : MonoBehaviour
 
         _controlPlayer = new ControlPlayer();
 		_returnGameObject.GetComponent<Light>().intensity = 0;
-    }
+
+		playerTransform = _returnGameObject.transform;
+
+		transform.position = new Vector3()
+		{
+			x = playerTransform.position.x,
+			y = playerTransform.position.y,
+			z = playerTransform.position.z - 10,
+		};
+	}
 
     void Update()
     {
         _controlPlayer.Control(_returnGameObject, _speedPlayer, _buttonNameForvard, _buttonNameBack,
 			_buttonNameLeft, _buttonNameRight, _returnGameObject.GetComponent<Light>());
 
-		_camera.transform.position = _returnGameObject.transform.position + new Vector3(0,0,-5);
-	
+		if (playerTransform)
+		{
+			Vector3 target = new Vector3()
+			{
+				x = playerTransform.position.x,
+				y = playerTransform.position.y,
+				z = playerTransform.position.z - 10,
+			};
+
+			Vector3 pos = Vector3.Lerp(transform.position,
+				target, movingSpeed * Time.deltaTime);
+
+			transform.position = pos;
+		}
 		#region TODO Перенести бег в класс контроллер
 		if (Input.GetKeyDown(KeyCode.LeftShift))
 		{
@@ -52,7 +76,6 @@ public class PlayerGenerated : MonoBehaviour
 		{
 			_speedPlayer = 5;
 		}
-		#endregion
-		
+		#endregion	
 	}
 }

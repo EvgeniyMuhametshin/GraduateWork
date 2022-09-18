@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ControlPlayer
 {
+	//TODO Play animations
     public void Control(GameObject bodyPlayer, float speed, KeyCode buttonNameForvard, KeyCode buttonNameBack,
 		KeyCode buttonNameLeft, KeyCode buttonNameRight, Light light)
     {

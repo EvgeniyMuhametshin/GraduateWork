@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyGenerated : MonoBehaviour
@@ -15,6 +13,6 @@ public class EnemyGenerated : MonoBehaviour
 		_generatedCharacterEnemy = new GeneratedCharacterEnemy();
 
 		_generatedCharacterEnemy.Generated(new Vector3(1, 1, 1), new Vector3(-26.5f, -16.18f, 0),
-			Quaternion.Euler(0, 0, 0), "Player", 6, _sprite);
+			Quaternion.Euler(0, 0, 0), "Enemy", 6, _sprite);
 	}
 }

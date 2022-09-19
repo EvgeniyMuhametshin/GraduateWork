@@ -27,7 +27,6 @@ public class PlayerGenerated : MonoBehaviour
 
 	public SavePositions _positions;
 
-
 	void Start()
     {
         _generationsCharacter = new GeneratedCharactersPlayer();
@@ -51,7 +50,8 @@ public class PlayerGenerated : MonoBehaviour
     void Update()
     {
         _controlPlayer.Control(_returnGameObject, _speedPlayer, _buttonNameForvard, _buttonNameBack,
-			_buttonNameLeft, _buttonNameRight, _returnGameObject.GetComponent<Light>());
+			_buttonNameLeft, _buttonNameRight, _returnGameObject.GetComponent<Light>(),
+			_returnGameObject.GetComponent<Animator>());
 
 		if (playerTransform)
 		{

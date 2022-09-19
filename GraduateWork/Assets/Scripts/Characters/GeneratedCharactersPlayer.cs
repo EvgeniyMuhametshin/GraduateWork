@@ -28,6 +28,10 @@ public class GeneratedCharactersPlayer
 
 		gameObject.AddComponent<Light>();
 
+		gameObject.AddComponent<Animator>();
+		gameObject.GetComponent<Animator>().runtimeAnimatorController = (RuntimeAnimatorController)Resources.
+			Load("Animation/Player/Sprite-0002");
+
 		return gameObject;
 	}
 }

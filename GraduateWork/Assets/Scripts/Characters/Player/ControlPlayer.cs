@@ -2,8 +2,6 @@
 
 public class ControlPlayer
 {
-	//TODO Проигрывание анимации
-	//TODO Запустить анимацию при движении
     public void Control(GameObject bodyPlayer, float speed, KeyCode buttonNameForvard, KeyCode buttonNameBack,
 		KeyCode buttonNameLeft, KeyCode buttonNameRight, Light light, Animator animator)
     {
@@ -13,7 +11,7 @@ public class ControlPlayer
 				Vector3.up * speed * Time.deltaTime;
 			animator.SetBool("MoveUp", true);
 		}
-		else
+		else 
 		{
 			animator.SetBool("MoveUp", false);
 		}
@@ -48,6 +46,7 @@ public class ControlPlayer
 			animator.SetBool("MoveRight", false);
 		}
 
+		#region Light
 		if (Input.GetKeyDown(KeyCode.F))
 		{
 			bodyPlayer.GetComponent<Light>().intensity = 1;
@@ -56,5 +55,6 @@ public class ControlPlayer
 		{
 			bodyPlayer.GetComponent<Light>().intensity = 0;
 		}
+		#endregion
 	}
 }

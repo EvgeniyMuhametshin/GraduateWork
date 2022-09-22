@@ -12,7 +12,8 @@ public class PlayerGenerated : MonoBehaviour
 
     private float _speedPlayer = 5f;
 
-    [SerializeField]
+	#region Button Controller
+	[SerializeField]
     private KeyCode _buttonNameForvard = KeyCode.W;
 	[SerializeField]
 	private KeyCode _buttonNameBack = KeyCode.S;
@@ -20,6 +21,7 @@ public class PlayerGenerated : MonoBehaviour
 	private KeyCode _buttonNameLeft = KeyCode.A;
 	[SerializeField]
 	private KeyCode _buttonNameRight = KeyCode.D;
+	#endregion
 
 	private GeneratedCharactersPlayer _generationsCharacter;
     private ControlPlayer _controlPlayer;
@@ -67,7 +69,8 @@ public class PlayerGenerated : MonoBehaviour
 
 			transform.position = pos;
 		}
-		#region TODO Перенести бег в класс контроллер
+
+		#region Перенести бег в класс контроллер
 		if (Input.GetKeyDown(KeyCode.LeftShift))
 		{
 			_speedPlayer = _speedPlayer * 2;

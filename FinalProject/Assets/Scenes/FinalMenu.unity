@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 6386379238144647874}
   - component: {fileID: 6386379238144647884}
   - component: {fileID: 6386379238144647875}
+  - component: {fileID: 6386379238144647876}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -276,6 +277,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6386379238144647876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6386379238144647873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01076ec580ff99947a4bf6fa350eb5d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objects: {fileID: 11400000, guid: 46e30c29aba9da0488b50c34d5bff0b0, type: 2}
 --- !u!222 &6386379238144647884
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -297,7 +311,7 @@ GameObject:
   - component: {fileID: 6386379238290429964}
   - component: {fileID: 6386379238290429955}
   m_Layer: 5
-  m_Name: StartGame
+  m_Name: RestartGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -366,7 +380,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6386379238290429964}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6386379238144647876}
+        m_TargetAssemblyTypeName: FinalMenu, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6386379238290429964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,7 +494,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6386379238319813946}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6386379238144647876}
+        m_TargetAssemblyTypeName: FinalMenu, Assembly-CSharp
+        m_MethodName: ExitStartMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6386379238319813946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1036,7 +1074,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: Restart
 --- !u!222 &6386379239185445298
 CanvasRenderer:
   m_ObjectHideFlags: 0

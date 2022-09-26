@@ -8,7 +8,7 @@ public class PlayerGenerated : MonoBehaviour
 	[SerializeField]
 	private float movingSpeed;
 	[SerializeField]
-	private Transform playerTransform;
+	private Transform playerTransform;//camera
 
     private float _speedPlayer = 5f;
 
@@ -33,15 +33,15 @@ public class PlayerGenerated : MonoBehaviour
     {
         _generationsCharacter = new GeneratedCharactersPlayer();
 
-        _returnGameObject = _generationsCharacter.Generated(new Vector3(1,1,1), _positions.positions,
-            Quaternion.Euler(0,0,0), "Player", 6, _sprite);
+        _returnGameObject = _generationsCharacter.Generated(new Vector3(1,1,1), 
+			_positions.positions, Quaternion.Euler(0,0,0), "Player", 6, _sprite);
 
         _controlPlayer = new ControlPlayer();
 		_returnGameObject.GetComponent<Light>().intensity = 0;
 
-		playerTransform = _returnGameObject.transform;
+		playerTransform = _returnGameObject.transform;//camera
 
-		transform.position = new Vector3()
+		transform.position = new Vector3()//camera
 		{
 			x = playerTransform.position.x,
 			y = playerTransform.position.y,
@@ -55,7 +55,7 @@ public class PlayerGenerated : MonoBehaviour
 			_buttonNameLeft, _buttonNameRight, _returnGameObject.GetComponent<Light>(),
 			_returnGameObject.GetComponent<Animator>());
 
-		if (playerTransform)
+		if (playerTransform)//camera
 		{
 			Vector3 target = new Vector3()
 			{
@@ -64,10 +64,10 @@ public class PlayerGenerated : MonoBehaviour
 				z = playerTransform.position.z - 10,
 			};
 
-			Vector3 pos = Vector3.Lerp(transform.position,
+			Vector3 pos = Vector3.Lerp(transform.position,//camera
 				target, movingSpeed * Time.deltaTime);
 
-			transform.position = pos;
+			transform.position = pos;//camera
 		}
 
 		#region Перенести бег в класс контроллер

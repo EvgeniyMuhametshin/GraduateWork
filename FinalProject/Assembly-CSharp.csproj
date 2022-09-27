@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{E1456745-ED92-4EB6-8905-E64DC1E47277}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -83,6 +84,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Characters\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Characters\Player\CameraController.cs" />
+    <Compile Include="Assets\Scripts\UI\UIPlayer\ExampleUIPlayer.cs" />
+    <Compile Include="Assets\Scripts\Key\ExampleKey.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\UI\FinalMenu\FinalMenu.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\PlayerObjects.cs" />
@@ -100,8 +103,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Scripts\Key\ExampleKey.cs" />
-    <Compile Include="Assets\Scripts\UI\UIPlayer\ExampleUIPlayer.cs" />
+    <Compile Include="Assets\Scripts\Characters\Enemy\EnemyLook.cs" />
+    <Compile Include="Assets\Scripts\Characters\Enemy\EnemyFlags.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

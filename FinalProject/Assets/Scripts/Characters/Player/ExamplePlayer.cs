@@ -11,6 +11,9 @@ public class ExamplePlayer : MonoBehaviour
     [SerializeField]
     private float _speedPlayer = 5;
 
+    [SerializeField]
+    private Animator _animatorPlayer;
+
     private PlayerController _controllerPlayer;
     private CameraController _cameraController;
 
@@ -32,7 +35,7 @@ public class ExamplePlayer : MonoBehaviour
     private void Update()
     {
         _controllerPlayer.Controller(_playerBody, _inputForward, _inputBack, 
-            _inputLeft, _inputRight, _speedPlayer, _playerRenderer);
+            _inputLeft, _inputRight, _speedPlayer, _playerRenderer, _animatorPlayer);
         _cameraController.Controller(_playerBody, _cameraPlayer);
     }
 }

@@ -20,12 +20,12 @@ public class EnemyFlags : MonoBehaviour
 
         if (_distance < _minDistance)
         {
-            gameObject.GetComponent<EnemyLook>().enabled = true;
+            gameObject.GetComponent<EnemyChase>().enabled = true;
 			gameObject.GetComponent<ExampleEnemy>().enabled = false;
 		}
 		if (_distance > _minDistance)//необязательное сравнение 
 		{
-			gameObject.GetComponent<EnemyLook>().enabled = false;
+			gameObject.GetComponent<EnemyChase>().enabled = false;
 			gameObject.GetComponent<ExampleEnemy>().enabled = true;
 		}
 	}

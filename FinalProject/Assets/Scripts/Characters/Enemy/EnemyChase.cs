@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyLook : MonoBehaviour
+public class EnemyChase : MonoBehaviour
 {
     public Transform _playerObject;
 

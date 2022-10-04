@@ -1,11 +1,36 @@
 using UnityEngine;
 
-public class CameraController 
+public class CameraController : MonoBehaviour
 {
-    private Vector3 positionsCamera = new Vector3(0, 0, -1);
+	[SerializeField]
+	private Transform _playerTransform;
+	private float _speedCamera = 5f;
 
-    public void Controller(Transform _playerTransform, Camera camera)
+	private void Start()
+	{
+		transform.position = new Vector3()
+		{
+			x = _playerTransform.position.x,
+			y = _playerTransform.position.y,
+			z = _playerTransform.position.z - 10,
+		};
+	}
+
+	private void Update()
     {
-        camera.transform.position = _playerTransform.position + positionsCamera;
-    }
+		if (_playerTransform)
+		{
+			Vector3 target = new Vector3()
+			{
+				x = _playerTransform.position.x,
+				y = _playerTransform.position.y,
+				z = _playerTransform.position.z - 10,
+			};
+
+			Vector3 pos = Vector3.Lerp(transform.position, target,
+				_speedCamera * Time.deltaTime);
+
+			transform.position = pos;
+		}
+	}
 }

@@ -4,6 +4,8 @@ public class EnemyFlags : MonoBehaviour
 {
 	[SerializeField]
 	private Transform _playerObject;
+	[SerializeField]
+	private Animator _animator;
 
 	private float _distance;
 	private float _minDistance = 5f;
@@ -18,10 +20,15 @@ public class EnemyFlags : MonoBehaviour
 		_distance = Mathf.Sqrt((gameObject.transform.position - 
 			_playerObject.transform.position).sqrMagnitude);
 
-        if (_distance < _minDistance)
-        {
-            gameObject.GetComponent<EnemyChase>().enabled = true;
+		if (_distance < _minDistance)
+		{
+			gameObject.GetComponent<EnemyChase>().enabled = true;
 			gameObject.GetComponent<ExampleEnemy>().enabled = false;
+			_animator.SetBool("WalkEnemy", true);
+		}
+		else
+		{
+			_animator.SetBool("WalkEnemy", false);
 		}
 		if (_distance > _minDistance)//необязательное сравнение 
 		{

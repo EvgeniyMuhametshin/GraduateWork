@@ -11,7 +11,7 @@ public class Message : MonoBehaviour
 		_canvasMessages.enabled = false;
 	}
 
-	public void OnTriggerEnter2D(Collider2D collision)
+	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.CompareTag("Player"))
 		{
@@ -19,7 +19,7 @@ public class Message : MonoBehaviour
 		}
 	}
 
-	public void OnTriggerExit2D(Collider2D collision)
+	private void OnTriggerExit2D(Collider2D collision)
 	{
 		if (collision.CompareTag("Player"))
 		{

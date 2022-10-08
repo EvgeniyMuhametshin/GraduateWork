@@ -3,7 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuPause : MonoBehaviour
 {
-    public static bool GameisPaused = false;
+    [SerializeField]
+    private static bool GameisPaused = false;
+    [SerializeField]
+    private AudioSource _audioSource;
 
     public GameObject pauseMenuUI;
 
@@ -24,7 +27,8 @@ public class MenuPause : MonoBehaviour
 
     public void Resume()
     {
-		pauseMenuUI.SetActive(false);
+        _audioSource.Play();
+        pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameisPaused = false;
 	}
@@ -38,6 +42,7 @@ public class MenuPause : MonoBehaviour
 
     public void ExitStartMenu()
     {
+        _audioSource.Play();
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }

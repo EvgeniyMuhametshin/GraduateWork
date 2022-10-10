@@ -10,6 +10,8 @@ public class ExampleEnemy : MonoBehaviour
 	private float waitTime;
 	public float startWaitTime = 3;
 
+	private int _damage = 1;
+
 	private void Start()
 	{
 		waitTime = startWaitTime;
@@ -41,6 +43,15 @@ public class ExampleEnemy : MonoBehaviour
 			{
 				waitTime -= Time.deltaTime;
 			}
+		}
+	}
+
+	//Damage Player
+	private void OnTriggerStay2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
+			PlayerObjects.HEALTH_POINTS -= _damage;
 		}
 	}
 }

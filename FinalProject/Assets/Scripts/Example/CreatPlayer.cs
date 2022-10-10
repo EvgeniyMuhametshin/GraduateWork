@@ -10,6 +10,6 @@ public class CreatPlayer : MonoBehaviour
 	//Start positions player new Vector3(0,-10,0)!!!
 	private void Awake()
 	{
-		Instantiate(_prefabsPlayer, _objects.positionsPlayer, Quaternion.identity);
+		Instantiate(_prefabsPlayer, _objects.POSITIONS_PLAYER, Quaternion.identity);
 	}
 }

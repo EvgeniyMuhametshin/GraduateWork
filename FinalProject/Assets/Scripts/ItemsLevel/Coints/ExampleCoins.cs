@@ -6,7 +6,7 @@ public class ExampleCoins : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            PlayerObjects.coins++;
+            PlayerObjects.COINS++;
         }
         Destroy(gameObject);
     }

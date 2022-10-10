@@ -7,11 +7,11 @@ public class PCLogic : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (PlayerObjects.keyForPC >= 1)
+        if (PlayerObjects.KEY_FOR_PC >= 1)
         {
             _animator.SetBool("Work", true);
             Debug.Log("PC is work");
-            PlayerObjects.keyForPC--;
+            PlayerObjects.KEY_FOR_PC--;
         }
         else
         {

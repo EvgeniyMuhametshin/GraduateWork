@@ -3,10 +3,13 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerObjects : ScriptableObject
 {
-    public Vector3 positionsPlayer;
-    public static int countKey;
+    public Vector3 POSITIONS_PLAYER;
 
-    public static int keyForPC;
+    public static int COUNT_KEY;
 
-    public static int coins;
+    public static int KEY_FOR_PC;
+
+    public static int COINS;
+
+    public static int HEALTH_POINTS;
 }

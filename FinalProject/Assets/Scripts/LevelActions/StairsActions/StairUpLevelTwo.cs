@@ -10,7 +10,7 @@ public class StairUpLevelTwo : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            _objects.positionsPlayer = new Vector3(-18,12,0);
+            _objects.POSITIONS_PLAYER = new Vector3(-18,12,0);
             SceneManager.LoadScene(1);
         }
     }

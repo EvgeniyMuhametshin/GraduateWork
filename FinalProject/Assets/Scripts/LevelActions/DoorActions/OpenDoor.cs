@@ -4,7 +4,7 @@ public class OpenDoor : MonoBehaviour
 {
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.CompareTag("Player") && PlayerObjects.countKey >= 2)
+		if (collision.CompareTag("Player") && PlayerObjects.COUNT_KEY >= 2)
 		{
 			Destroy(gameObject);
 		}

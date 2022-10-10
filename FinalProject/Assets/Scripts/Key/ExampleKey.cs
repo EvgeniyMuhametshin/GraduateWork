@@ -6,7 +6,7 @@ public class ExampleKey : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            PlayerObjects.countKey++;
+            PlayerObjects.COUNT_KEY++;
         }
         Destroy(gameObject);
     }

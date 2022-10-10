@@ -18,7 +18,7 @@ public class MessagePC : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (PlayerObjects.keyForPC == 1)
+        if (PlayerObjects.KEY_FOR_PC == 1)
         {
             _flag = true;
         }

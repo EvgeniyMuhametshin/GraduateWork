@@ -13,7 +13,7 @@ public class StartMenu : MonoBehaviour
     {
         _audioSource.Play();
         SceneManager.LoadScene(1);
-        _objects.positionsPlayer = new Vector3(0, -10, 0);
+        _objects.POSITIONS_PLAYER = new Vector3(0, -10, 0);
     }
 
     public void ExitGame()

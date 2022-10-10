@@ -6,7 +6,7 @@ public class KeyForPC : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            PlayerObjects.keyForPC++;
+            PlayerObjects.KEY_FOR_PC++;
         }
         Destroy(gameObject);
     }

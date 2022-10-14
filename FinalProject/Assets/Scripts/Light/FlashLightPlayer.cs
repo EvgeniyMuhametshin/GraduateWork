@@ -12,11 +12,11 @@ public class FlashLightPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             _light.intensity = 3f;
         }
-        else if(Input.GetKeyUp(KeyCode.F))
+        else if(Input.GetKeyUp(KeyCode.Mouse0))
         {
             _light.intensity = 0;
         }

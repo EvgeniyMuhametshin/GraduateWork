@@ -28,7 +28,6 @@ public class Lightning : MonoBehaviour
         {
             _lightning.intensity -= Time.deltaTime;
             waitTime -= Time.deltaTime;
-            Debug.Log(waitTime);
         }
     }
 }

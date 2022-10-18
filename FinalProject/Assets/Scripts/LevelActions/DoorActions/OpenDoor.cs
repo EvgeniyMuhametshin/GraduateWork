@@ -15,6 +15,7 @@ public class OpenDoor : MonoBehaviour
 		if (collision.CompareTag("Player") && PlayerObjects.COUNT_KEY >= 2)
 		{
 			_animator.SetBool("OpenDoorAnim", true);
+			PlayerObjects.COUNT_KEY = 0;
 		}
 	}
 }

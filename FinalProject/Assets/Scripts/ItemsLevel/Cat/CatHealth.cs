@@ -10,6 +10,9 @@ public class CatHealth : MonoBehaviour
             {
                 PlayerObjects.HEALTH_POINTS += 10;
                 PlayerObjects.COINS -= 1;
+				//Работа с альфа каналом произходит от 0 до 1.
+                //где 0 это прозрачнаая материя а 1 слишком темная материя.
+				PlayerObjects.COLOR_ALTHA.a -= 0.10f;
             }
         }
     }

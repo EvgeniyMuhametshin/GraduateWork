@@ -16,9 +16,5 @@ public class OpenDoor : MonoBehaviour
 		{
 			_animator.SetBool("OpenDoorAnim", true);
 		}
-		else
-		{
-			Debug.LogWarning("You are needed the 2 keys");
-		}
 	}
 }

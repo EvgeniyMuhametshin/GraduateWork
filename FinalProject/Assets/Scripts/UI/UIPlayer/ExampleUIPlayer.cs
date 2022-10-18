@@ -9,13 +9,10 @@ public class ExampleUIPlayer : MonoBehaviour
     private TMP_Text _textKeyForPC;
 	[SerializeField]
 	private TMP_Text _textCoins;
-    [SerializeField]
-    private TMP_Text _textHealthPlayer;
 
 	private string _resultKeyDoor;
     private string _resultKeyForPC;
     private string _resultCoins;
-    private string _resultHealthPlayer;
 
 	private void Update()
     {
@@ -27,8 +24,5 @@ public class ExampleUIPlayer : MonoBehaviour
 
 		_resultCoins = $"{PlayerObjects.COINS}";
 		_textCoins.text = _resultCoins;
-
-        _resultHealthPlayer = $"{PlayerObjects.HEALTH_POINTS}";
-        _textHealthPlayer.text = _resultHealthPlayer;
     }
 }

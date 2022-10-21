@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class AudioVerbZone : MonoBehaviour
 {
+    //TODO Проверить на надобность класса 
     [SerializeField]
     private GameObject _player;
     [SerializeField]

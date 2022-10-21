@@ -4,7 +4,11 @@
 
 ##### Спрайты и анимация (Взято с сайта itch.io)
 Keyboard ------------- https://ansdor.itch.io/button-icons
-Cat ------------------ https://elthen.itch.io/2d-pixel-art-cat-sprites
+
+Cat -------------------- https://elthen.itch.io/2d-pixel-art-cat-sprites
+
 Level and Character -- https://arks.itch.io/dungeon-platform-tileset
-Buttons style -------- https://andelrodis.itch.io/1-bit-game-ui-pack
-Font ----------------- https://arcade.itch.io/mr-junker-msx
+
+Buttons style ---------- https://andelrodis.itch.io/1-bit-game-ui-pack
+
+Font ------------------- https://arcade.itch.io/mr-junker-msx

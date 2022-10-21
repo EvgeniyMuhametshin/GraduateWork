@@ -52,6 +52,7 @@ public class ExampleEnemy : MonoBehaviour
 		if (collision.CompareTag("Player"))
 		{
 			PlayerObjects.HEALTH_POINTS -= _damage;
+			PlayerObjects.COLOR_ALTHA.a += 0.01f;//увеличиваем альфа для затемнение изображения
 		}
 	}
 }

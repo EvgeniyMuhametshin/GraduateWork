@@ -12,4 +12,6 @@ public class PlayerObjects : ScriptableObject
     public static int COINS;
 
     public static int HEALTH_POINTS;
+
+    public static Color COLOR_ALTHA;
 }

@@ -8,6 +8,7 @@ public class Lightning : MonoBehaviour
     private AudioSource _source;
 
     //TODO Добавить рандомное значение 
+    //TODO Вынести таймер в отдельный скрипт
     private float waitTime;
     private float startWaitTime = 30;//Рандомное значение
 
@@ -28,7 +29,6 @@ public class Lightning : MonoBehaviour
         {
             _lightning.intensity -= Time.deltaTime;
             waitTime -= Time.deltaTime;
-            Debug.Log(waitTime);
         }
     }
 }

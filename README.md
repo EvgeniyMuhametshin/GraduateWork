@@ -2,6 +2,9 @@
 
 ![2](https://user-images.githubusercontent.com/75341173/197357108-e610ff6b-4c7a-4173-aed0-bfdbca4bf585.gif)
 
+##### Сюжет взят из игры Haunted House 1982 года (Atari 2600)
+Wikipedia ------------- https://en.wikipedia.org/wiki/Haunted_House_(video_game)
+
 ##### Спрайты и анимация (Взято с сайта itch.io)
 Keyboard ------------- https://ansdor.itch.io/button-icons
 

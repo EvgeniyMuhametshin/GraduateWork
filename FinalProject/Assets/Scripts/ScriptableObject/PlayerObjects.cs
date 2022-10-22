@@ -14,4 +14,6 @@ public class PlayerObjects : ScriptableObject
     public static int HEALTH_POINTS;
 
     public static Color COLOR_ALTHA;
+
+    public static bool KEYBOARD_MENU;
 }

@@ -2,6 +2,11 @@
 
 ![2](https://user-images.githubusercontent.com/75341173/197357108-e610ff6b-4c7a-4173-aed0-bfdbca4bf585.gif)
 
+##### Архив и видео игры 
+Видео игры ------------ https://drive.google.com/file/d/1YyFXvl4z_FpThks3-Z_p7AF1vSxDpyGc/view?usp=sharing
+
+Архив игры ------------ https://drive.google.com/file/d/1b-OM3wSAewultMoX0lHAA3JpK8KM7GF5/view?usp=sharing
+
 ##### Игра
 Версия Unity ---------- 2020.3.27f1
 

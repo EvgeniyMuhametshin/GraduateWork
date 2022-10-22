@@ -7,6 +7,9 @@
 
 Версия Aseprite ------- v1.2.33-dev
 
+##### Звуки и Музыка 
+https://zvukipro.com
+
 ##### Сюжет взят из игры Haunted House 1982 года (Atari 2600)
 Wikipedia ------------- https://en.wikipedia.org/wiki/Haunted_House_(video_game)
 
